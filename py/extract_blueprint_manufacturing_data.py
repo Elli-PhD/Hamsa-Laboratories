@@ -77,5 +77,3 @@ print('Completed converting Product rows to column\n')
 """ Save data as .csv """
 df.to_csv('blueprints.csv',index=False)
 print('Data saved as blueprints.csv!')
-
-
