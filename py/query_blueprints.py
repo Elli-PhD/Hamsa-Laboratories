@@ -3,6 +3,9 @@ pd.set_option('display.max_columns', None)
 import numpy as np
 import sys
 
+# Pull global dataframe of all products and materials
+all_mats = pd.read_csv('global - list of materials and products.csv')
+
 # Pull query information from .csv file and add to list
 query = pd.read_csv('query_blueprints - query list.csv')
 query = query[query['Query'] == 'y']
@@ -47,7 +50,7 @@ for i in tier1['Product Name'].drop_duplicates():
     tier2 = pd.concat([tier2, tmp])
 print(tier1[['Quantity','Material Name']])
 print(tier2)
-sys.exit()
+##sys.exit()
 
 # Add unique material quantities together
 tier3 = []
@@ -59,13 +62,23 @@ for i in tier2['Material Name'].drop_duplicates():
 tier3 = pd.DataFrame(tier3)
 tier3.columns = ['Quantity','Material Name']
 print(tier3)
+
+
+
+########################################################
+# Print list of items that are related to Planetary Industry
+########################################################
+print("Planetary Industry Items - Tier 1")
+for i in tier3['Material Name'].drop_duplicates():
+    if i in all_mats['PI'].to_list():
+        print(i)
+    else:
+        pass
 sys.exit()
 
 # parse tier3 dataframe
 # if input is a product, query product to find next tier or materials
 # if material is a raw material, add to tier2 dataframe
-# first load global - list of materials and products.csv
-all_mats = pd.read_csv('global - list of materials and products.csv')
 ##print(tier1.columns)
 ##print(all_mats)
 # step through tier1 list
