@@ -1,0 +1,10 @@
+EVE Online SDE:
+https://developers.eveonline.com/resource/resources
+
+Git Guide:
+https://www.tutorialspoint.com/git/git_quick_guide.htm
+
+See:
+https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/
+git log --oneline
+https://mmmshakeel.medium.com/remove-the-last-commit-from-git-5f62842ce4a4
