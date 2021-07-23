@@ -1,23 +1,85 @@
 Raw material name,Product material name,PI
-Burned Logic Circuit,Light Missile Launcher I,Bacteria
-Construction Blocks,Quantum Microprocessor,Biofuels
-Isogen,R.A.M.- Weapon Tech,Biomass
-Mechanical Parts,Plasma Thruster,Chiral Structures
-Melted Capacitor Console,Ion Thruster,Electrolytes
-Mexallon,R.A.M.- Armor/Hull Tech,Industrial Fibers
-Miniature Electronics,1MN Afterburner I,Oxidizing Compound
-Morphite,Antimatter Reactor Unit,Oxygen
-Pyerite,Small Shield Booster I,Plasmoids
-Robotics,Pulse Shield Emitter,Precious Metals
-Superconductors,R.A.M.- Shield Tech,Proteins
-Tripped Power Circuit,Linear Shield Emitter,Reactive Metals
-Tritanium,EM Shield Amplifier I,Silicon
-,Thermal Shield Amplifier I,Toxic Metals
-,Oscillator Capacitor Unit,Water
-,Plasma Pulse Generator,Construction Blocks
-,Fernite Carbide Composite Armor Plate,Consumer Electronics
-,Damage Control I,Mechanical Parts
-,Ballistic Control System I,Miniature Electronics
-,R.A.M.- Electronics,Rocket Fuel
-,Co-Processor I,Superconductors
-,Photon Microprocessor,
+GROUP – MINERALS,Light Missile Launcher I,Bacteria
+Isogen,Quantum Microprocessor,Biofuels
+Megacyte,R.A.M.- Weapon Tech,Biomass
+Mexallon,Plasma Thruster,Chiral Structures
+Morphite,Ion Thruster,Electrolytes
+Nocxium,R.A.M.- Armor/Hull Tech,Industrial Fibers
+Pyerite,1MN Afterburner I,Oxidizing Compound
+Tritanium,Antimatter Reactor Unit,Oxygen
+Zydrine,Small Shield Booster I,Plasmoids
+GROUP – PLANETARY MATERIALS,Pulse Shield Emitter,Precious Metals
+Aqueous Liquids,R.A.M.- Shield Tech,Proteins
+Autotrophs,Linear Shield Emitter,Reactive Metals
+Base Metals,EM Shield Amplifier I,Silicon
+Carbon Compounds,Thermal Shield Amplifier I,Toxic Metals
+Complex Organisms,Oscillator Capacitor Unit,Water
+Felsic Magma,Plasma Pulse Generator,Construction Blocks
+Heavy Metals,Fernite Carbide Composite Armor Plate,Consumer Electronics
+Ionic Solutions,Damage Control I,Mechanical Parts
+Microorganisms,Ballistic Control System I,Miniature Electronics
+Noble Gas,R.A.M.- Electronics,Robotics
+Noble Metals,Co-Processor I,Rocket Fuel
+Non-CS Crystals,Photon Microprocessor,Superconductors
+Planktic Colonies,,
+Reactive Gas,,
+Suspended Plasma,,
+GROUP – ADVANCED MOON MATERIALS,,
+Crystalline Carbonide,,
+Fermionic Condensates,,
+Fernite Carbide,,
+Ferrogel,,
+Fullerides,,
+Hypersynaptic Fibers,,
+Nanotransistors,,
+Nonlinear Metamaterials,,
+Phenolic Composites,,
+Photonic Metamaterials,,
+Plasmonic Metamaterials,,
+Pressurized Oxidizers,,
+Reinforced Carbon Fiber,,
+Sylramic Fibers,,
+Terahertz Metamaterials,,
+Titanium Carbide,,
+Tungsten Carbide,,
+GROUP – SALVAGE MATERIALS,,
+Alloyed Tritanium Bar,,
+Armor Plates,,
+Artificial Neural Network,,
+Broken Drone Transceiver,,
+Burned Logic Circuit,,
+Capacitor Console,,
+Charred Micro Circuit,,
+Conductive Polymer,,
+Conductive Thermoplastic,,
+Contaminated Lorentz Fluid,,
+Current Pump,,
+Damaged Artificial Neural Network,,
+Defective Current Pump,,
+Drone Transceiver,,
+Electromagnetic Metaprismatic Sheeting,,
+Enhanced Ward Console,,
+Fried Interface Circuit,,
+Hyperbolic Metatransistor Array,,
+Impetus Console,,
+Intact Armor Plates,,
+Intact Shield Emitter,,
+Interface Circuit,,
+Logic Circuit,,
+Lorentz Fluid,,
+Malfunctioning Shield Emitter,,
+Melted Capacitor Console,,
+Micro Circuit,,
+Nanite Compound,,
+Power Circuit,,
+Power Conduit,,
+Schorched Telemetry Processor,,
+Single-crystal Superalloy I-beam,,
+Smashed Trigger Unit,,
+Tangled Power Conduit,,
+Telemetry Processor,,
+Thruster Console,,
+Trigger Unit,,
+Tripped Power Circuit,,
+Ultraconducting Ablative Nanocable,,
+Ward Console,,
