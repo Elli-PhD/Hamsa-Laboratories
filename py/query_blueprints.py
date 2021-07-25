@@ -63,7 +63,7 @@ iteration = 0
 print('Base list (iteration = %s):'%iteration)
 print(base)
 print('\n\n')
-print('Product list (Iteration = %s, length = %s)'%(iteration,len(products)))
+print('Product list (item quantities and ME applied; Iteration = %s, length = %s)'%(iteration,len(products)))
 print(products)
 print('\n\n')
 
@@ -101,21 +101,22 @@ for i in products['Material Name'].to_list():
 iteration =+ 1
 print('Base (base_tmp, iteration = %s)'%iteration)
 print(base_tmp)
+print('\n\n')
 # Multiply each Material by number of associated products and ME (assume ME=10)
 products_tmp = pd.DataFrame()
 for i in base_tmp['Product Name'].drop_duplicates():
     tmp = base_tmp[base_tmp['Product Name'] == i].copy()
     quantity = products[products['Material Name'] == i]['Quantity'].iloc[0]
-    print(quantity)
+##    print(quantity)
 ##    # Keep this for future reference; I may need to make a list of ME values in the future
 ##    mef = query[query['Name'] == i]['ME'].iloc[0]
 ##    tmp['Quantity'] = np.ceil(tmp['Quantity']*quantity*(1-mef/100.))
     tmp['Quantity'] = np.ceil(tmp['Quantity']*quantity*0.9)
     products_tmp = pd.concat([products_tmp, tmp])
 products = products_tmp
-print('Base times quantities and ME (products, iteration = %s)'%iteration)
-print(products)
-print('\n\n')
+##print('Base times quantities and ME (products, iteration = %s)'%iteration)
+##print(products)
+##print('\n\n')
 
 # Add unique material quantities together
 products_tmp = []
@@ -126,8 +127,9 @@ for i in products['Material Name'].drop_duplicates():
     products_tmp.append([total_quantity, mat])
 products = pd.DataFrame(products_tmp)
 products.columns = ['Quantity','Material Name']
-print('products (iteration = %s)'%iteration)
+print('Product list (item quantities and ME applied; iteration = %s)'%iteration)
 print(products)
+print('\n\n')
 
 # Place contents of products_tmp into respective [tmp] dataframes (PI, Raw, and Products)
 # variables to recall: pi_list, raw_materials
@@ -142,7 +144,6 @@ products_tmp = products[(products['Material Name'].isin(all_mats['PI-all-items']
                 == False) & \
                    (products['Material Name'].isin(all_mats['Raw material name'].tolist())\
                 == False)]
-print('\n\n Working section')
 ##print(pi_list_tmp)
 ##print(raw_materials_tmp)
 
@@ -152,24 +153,84 @@ raw_materials = pd.concat([raw_materials, raw_materials_tmp])
 ##print(pi_list)
 ##print(raw_materials)
 
-# Add unique material quantities together
-pi_list_tmp = pd.DataFrame()
+# Add unique PI material quantities together
+##print(pi_list)
+pi_list_tmp = []
 for i in pi_list['Material Name'].drop_duplicates():
     tmp = pi_list[pi_list['Material Name'] == i].copy()
-    mat = tmp['Material Name'].drop_duplicates().tolist()[0]
-    total_quantity = np.sum(tmp['Quantity'])
+    total_quantity = np.sum(tmp['Quantity']).astype(float)
+    mat = tmp['Material Name'].iloc[0]
     pi_list_tmp.append([total_quantity, mat])
-products = pd.DataFrame(products_tmp)
-products.columns = ['Quantity','Material Name']
-print('products (iteration = %s)'%iteration)
-print(products)
+
+pi_list = pi_list_tmp
+pi_list = pd.DataFrame(pi_list)
+pi_list.columns = ['Quantity','Material Name']
+pi_list = pi_list.sort_values(by = 'Material Name')
+##print(pi_list)
+##sys.exit()
+    
+# Add unique raw material quantities together
+##print(raw_materials)
+raw_materials_tmp = []
+for i in raw_materials['Material Name'].drop_duplicates():
+    tmp = raw_materials[raw_materials['Material Name'] == i].copy()
+    total_quantity = np.sum(tmp['Quantity']).astype(float)
+    mat = tmp['Material Name'].iloc[0]
+    raw_materials_tmp.append([total_quantity, mat])
+
+raw_materials = raw_materials_tmp
+raw_materials = pd.DataFrame(raw_materials)
+raw_materials.columns = ['Quantity','Material Name']
+raw_materials = raw_materials.sort_values(by = 'Material Name')
+
+# Split raw_materials into mineral, salvage, and advanced moon materials
+minerals = raw_materials[raw_materials['Material Name'].\
+                         isin(all_mats['Minerals'].tolist())]
+adv_moon_mats = raw_materials[raw_materials['Material Name'].\
+                         isin(all_mats['Advanced Moon Materials'].tolist())]
+salvage = raw_materials[raw_materials['Material Name'].\
+                         isin(all_mats['Salvage'].tolist())]
 
 
+print('Final report: \n')
+print('Base list (iteration = 0)')
+print(base)
+print('\n\n')
+print('Planetary Industry: ')
+print(pi_list)
+print('\n\n')
+print('Minerals: ')
+print(minerals)
+print('\n\n')
+print('Advanced Moon Materials: ')
+print(adv_moon_mats)
+print('\n\n')
+print('Salvage: ')
+print(salvage)
+
+input('Press Enter to exit...')
 sys.exit()
+    
 
 
 
-sys.exit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Seperate list of Planetary Industry materials from other materials
 pi_list = tier3[tier3['Material Name'].isin(all_mats['PI-all-items'].tolist())\
                 == True]

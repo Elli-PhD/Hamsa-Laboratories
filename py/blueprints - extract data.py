@@ -1,5 +1,6 @@
 import yaml
 import pandas as pd
+import sys
 
 """ A function to read YAML file """
 def read_yaml(filename):
@@ -15,22 +16,43 @@ blueprints = read_yaml('blueprints.yaml')
 print('Completed loading blueprints.yaml\n')
 
 print('Starting to convert blueprints.yaml to JMP table...')
+##df = []
+##for i in blueprints:
+##    try:
+##        entry = blueprints[i]
+##        m_data = entry['activities']['manufacturing']
+##        m_data = {key: m_data[key] for key in m_data.keys() & {'products','materials'}}
+##        for j in m_data:
+##            tmp = m_data[j]
+##            for k in tmp:
+##                df.append([i,j,k['quantity'],k['typeID']]) # need product
+##    except KeyError:
+##        pass
+##df = pd.DataFrame(df)
+##df.columns = ['Blueprint ID','Material Type','Quantity','Material ID']
+####print(df)
+##print('Completed converting blueprints.yaml to JMP table\n')
 df = []
 for i in blueprints:
     try:
         entry = blueprints[i]
         m_data = entry['activities']['manufacturing']
-        m_data = {key: m_data[key] for key in m_data.keys() & {'products','materials'}}
+        m_data = {key: m_data[key] for key in m_data.keys() & {'products','materials','skills'}}
         for j in m_data:
             tmp = m_data[j]
             for k in tmp:
-                df.append([i,j,k['quantity'],k['typeID']]) # need product
+                try:
+                    df.append([i,j,k['quantity'],k['typeID']]) # need product
+                except KeyError:
+                    df.append([i,j,k['level'],k['typeID']])
     except KeyError:
         pass
 df = pd.DataFrame(df)
 df.columns = ['Blueprint ID','Material Type','Quantity','Material ID']
 ##print(df)
+df.to_csv('blueprints - typeID indexes.csv')
 print('Completed converting blueprints.yaml to JMP table\n')
+##sys.exit()
 
 ##################################
 
