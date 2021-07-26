@@ -1,23 +1,23 @@
 Query,Name,Quantity,ME
 ,Breacher,1,10
-y,Light Missile Launcher II,3,2
-y,1MN Afterburner II,1,2
-y,Small Shield Booster II,1,2
-y,EM Shield Amplifier II,1,2
-y,Thermal Shield Amplifier II,1,2
-y,Damage Control II,1,2
-y,Ballistic Control System II,1,2
-y,Co-Processor II,1,2
+y,Light Missile Launcher II,10,2
+y,1MN Afterburner II,10,2
+y,Small Shield Booster II,10,2
+y,EM Shield Amplifier II,10,2
+y,Thermal Shield Amplifier II,10,2
+y,Damage Control II,10,2
+y,Ballistic Control System II,10,2
+y,Co-Processor II,10,2
 y,Small Semiconductor Memory Cell I,3,10
 ,Expanded Cargohold II,10,2
 ,Mjolnir Precision Heavy Missile,10,2
 ,,,
 ,Wreathe,1,10
-y,10MN Afterburner II,1,2
-y,EM Shield Amplifier II,2,2
-y,Thermal Shield Amplifier II,1,2
-y,Large Shield Extender II,1,2
-y,Expanded Cargohold II,5,2
+y,10MN Afterburner II,10,2
+y,EM Shield Amplifier II,10,2
+y,Thermal Shield Amplifier II,10,2
+y,Large Shield Extender II,10,2
+y,Expanded Cargohold II,10,2
 y,Medium Cargohold Optimization I,2,10
 y,Medium Hyperspatial Velocity Optimizer I,1,10
 ,,,

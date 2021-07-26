@@ -62,12 +62,12 @@ products = products_tmp
 
 ##products = base
 iteration = 0
-print('Base list (iteration = %s):'%iteration)
-print(base)
-print('\n\n')
-print('Product list (item quantities and ME applied; Iteration = %s, length = %s)'%(iteration,len(products)))
-print(products)
-print('\n\n')
+##print('Base list (iteration = %s):'%iteration)
+##print(base)
+##print('\n\n')
+##print('Product list (item quantities and ME applied; Iteration = %s, length = %s)'%(iteration,len(products)))
+##print(products)
+##print('\n\n')
 
 # In products, extract PI, Raw materials, and products
 # Take for products, query building materials and append to PI, Raw Materials, and generate new products
@@ -84,15 +84,15 @@ products = products[(products['Material Name'].isin(all_mats['PI-all-items'].tol
                    (products['Material Name'].isin(all_mats['Raw material name'].tolist())\
                 == False)]
 
-print('Planetary Industry (iteration = %s):'%iteration)
-print(pi_list)
-print('\n\n')
-print('Other raw materials (iteration = %s):'%iteration)
-print(raw_materials)
-print('\n\n')
-print("Remaining products (iteration = %s, length = %s)"%(iteration, len(products)))
-print(products)
-print('\n\n')
+##print('Planetary Industry (iteration = %s):'%iteration)
+##print(pi_list)
+##print('\n\n')
+##print('Other raw materials (iteration = %s):'%iteration)
+##print(raw_materials)
+##print('\n\n')
+##print("Remaining products (iteration = %s, length = %s)"%(iteration, len(products)))
+##print(products)
+##print('\n\n')
 
 # Iterative process starts here
 # Generate Base List
@@ -101,9 +101,9 @@ for i in products['Material Name'].to_list():
     base_tmp = pd.concat([base_tmp, blueprints[\
                                 blueprints['Product Name'] == i]])
 iteration =+ 1
-print('Base (base_tmp, iteration = %s)'%iteration)
-print(base_tmp)
-print('\n\n')
+##print('Base (base_tmp, iteration = %s)'%iteration)
+##print(base_tmp)
+##print('\n\n')
 # Multiply each Material by number of associated products and ME (assume ME=10)
 products_tmp = pd.DataFrame()
 for i in base_tmp['Product Name'].drop_duplicates():
@@ -129,9 +129,9 @@ for i in products['Material Name'].drop_duplicates():
     products_tmp.append([total_quantity, mat])
 products = pd.DataFrame(products_tmp)
 products.columns = ['Quantity','Material Name']
-print('Product list (item quantities and ME applied; iteration = %s)'%iteration)
-print(products)
-print('\n\n')
+##print('Product list (item quantities and ME applied; iteration = %s)'%iteration)
+##print(products)
+##print('\n\n')
 
 # Place contents of products_tmp into respective [tmp] dataframes (PI, Raw, and Products)
 # variables to recall: pi_list, raw_materials
@@ -196,23 +196,26 @@ salvage = raw_materials[raw_materials['Material Name'].\
 # Last thing to do is pull invention information
 product_name = []
 material_name = []
+query['Blueprint'] = query['Name']+\
+                         ([' Blueprint']*len(query))
 
-##invention = invention[(invention['Product Name'].\
-##                      isin(query['Name'].drop_duplicates().to_list())) & \
-##                      (invention['Material Name'].\
-##                      isin(all_mats['Science'].drop_duplicates().to_list()))]
+invention = invention[(invention['Product Name'].\
+                      isin(query['Blueprint'].drop_duplicates().to_list())) & \
+                      (invention['Material Name'].\
+                      str.contains('Datacore'))]
 ##print('Invention:\n'+str(invention))
 ##print(query['Name'].drop_duplicates().tolist())
-print(invention[invention['Product Name'].isin(['1MN Afterburner II Blueprint'])])
-##print(invention[invention['Product Name'].isin(query['Name'].\
+##print(invention[invention['Product Name'].isin(['1MN Afterburner II Blueprint'])])
+##print(invention[invention['Product Name'].isin(query['Blueprint'].\
 ##                            drop_duplicates().tolist())])
-sys.exit()
+##sys.exit()
 
 print('Final report: \n')
 print('Base list (iteration = 0)')
 print(base)
 print('\n\n')
-print('invention: ')
+print('Invention: ')
+print(invention['Material Name'].drop_duplicates().sort_values())
 print(invention)
 print('\n\n')
 print('Planetary Industry: ')

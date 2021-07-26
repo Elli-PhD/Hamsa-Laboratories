@@ -1,9 +1,20 @@
 # Hamsa-Laboratories
 Python code created by the founder of Hamsa Laboratories in EVE Online.
 
-My current big coding project which I just started involves trying to reverse engineer the Python code that runs EVE Online (a game which I have been playing for over a decade) for the purposes of:
 
- 1. Scrubbing manufacturing blueprint data and galaxy-wide market data to calculate daily profit margins for manufactured items in the game based off of raw material input.
+Code list:
+- "blueprints - extract data.py" and
+- "query_blueprints.py"
+
+"blueprints - extract data.py"
+This code parses parses through "blueprints.yaml" to generate a JMP table of the invention and manufacturing information for every blueprint in the game.  Since "blueprints.yaml" consists solely of typeIDs, this code also parses through "typeIDs.yaml" to identify the names corresponding to the typeIDs loaded into the table.  The final result is a JMP table of the invention and manufacturing information for every blueprint "blueprints.yaml" with typeIDs and corresponding names.
+
+"query_blueprints.py"
+This code uses the information contained within "query blueprints - query list.csv" to identify the raw materials required to construct sets of items.  Material Efficiency levels are set to account for the use of datacores during invention.  Note: It is assumed that all of Advanced Component Material Blueprints have ME=10.  The code reports on the information in seperate sections: Invention, Planetary Industry, Advanced Moon Minerals, and Salvage.  Currently functional for T1 and T2 [but not T3] production.
+
+My next coding projects are:
+
+ 1. Scrubbing manufacturing blueprint data and galaxy-wide market data to calculate daily profit margins for manufactured items in the game based off of raw material input (see "query_blueprints.py")
 
  2. Identifying where ship orientation vector calculations are implemented for the purpose of modifying them to more accurately represent zero-gravity physics, all while preserving the preexisting overall game framework.  (In essence, for a ship to orbit a small object in a small circle, its acceleration vector (i.e., the direction the ship is pointing) needs to point towards their target at an angle relative to the ship's current velocity (i.e., the direction the ship is moving in space).)
 
