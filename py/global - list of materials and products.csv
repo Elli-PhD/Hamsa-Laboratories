@@ -1,92 +1,92 @@
-Raw material name,Product material name,PI,Tier 1,PI-item-tier,PI-all-items,Minerals,Advanced Moon Materials,Salvage
-GROUP – MINERALS,Light Missile Launcher I,Bacteria,GROUP – MINERALS,Raw Materials,Aqueous Liquids,Isogen,Crystalline Carbonide,Alloyed Tritanium Bar
-Isogen,Quantum Microprocessor,Biofuels,Isogen,Raw Materials,Autotrophs,Megacyte,Fermionic Condensates,Armor Plates
-Megacyte,R.A.M.- Weapon Tech,Biomass,Megacyte,Raw Materials,Base Metals,Mexallon,Fernite Carbide,Artificial Neural Network
-Mexallon,Plasma Thruster,Chiral Structures,Mexallon,Raw Materials,Carbon Compounds,Morphite,Ferrogel,Broken Drone Transceiver
-Morphite,Ion Thruster,Electrolytes,Morphite,Raw Materials,Complex Organisms,Nocxium,Fullerides,Burned Logic Circuit
-Nocxium,R.A.M.- Armor/Hull Tech,Industrial Fibers,Nocxium,Raw Materials,Felsic Magma,Pyerite,Hypersynaptic Fibers,Capacitor Console
-Pyerite,1MN Afterburner I,Oxidizing Compound,Pyerite,Raw Materials,Heavy Metals,Tritanium,Nanotransistors,Charred Micro Circuit
-Tritanium,Antimatter Reactor Unit,Oxygen,Tritanium,Raw Materials,Ionic Solutions,Zydrine,Nonlinear Metamaterials,Conductive Polymer
-Zydrine,Small Shield Booster I,Plasmoids,Zydrine,Raw Materials,Microorganisms,,Phenolic Composites,Conductive Thermoplastic
-GROUP – PLANETARY MATERIALS,Pulse Shield Emitter,Precious Metals,GROUP – PLANETARY MATERIALS,Raw Materials,Noble Gas,,Photonic Metamaterials,Contaminated Lorentz Fluid
-Aqueous Liquids,R.A.M.- Shield Tech,Proteins,Bacteria,Raw Materials,Noble Metals,,Plasmonic Metamaterials,Current Pump
-Autotrophs,Linear Shield Emitter,Reactive Metals,Biofuels,Raw Materials,Non-CS Crystals,,Pressurized Oxidizers,Damaged Artificial Neural Network
-Base Metals,EM Shield Amplifier I,Silicon,Biomass,Raw Materials,Planktic Colonies,,Reinforced Carbon Fiber,Defective Current Pump
-Carbon Compounds,Thermal Shield Amplifier I,Toxic Metals,Chiral Structures,Raw Materials,Reactive Gas,,Sylramic Fibers,Drone Transceiver
-Complex Organisms,Oscillator Capacitor Unit,Water,Electrolytes,Raw Materials,Suspended Plasma,,Terahertz Metamaterials,Electromagnetic Metaprismatic Sheeting
-Felsic Magma,Plasma Pulse Generator,Construction Blocks,Industrial Fibers,Processed Materials,Bacteria,,Titanium Carbide,Enhanced Ward Console
-Heavy Metals,Fernite Carbide Composite Armor Plate,Consumer Electronics,Oxidizing Compound,Processed Materials,Biofuels,,Tungsten Carbide,Fried Interface Circuit
-Ionic Solutions,Damage Control I,Mechanical Parts,Oxygen,Processed Materials,Biomass,,,Hyperbolic Metatransistor Array
-Microorganisms,Ballistic Control System I,Miniature Electronics,Plasmoids,Processed Materials,Chiral Structures,,,Impetus Console
-Noble Gas,R.A.M.- Electronics,Robotics,Precious Metals,Processed Materials,Electrolytes,,,Intact Armor Plates
-Noble Metals,Co-Processor I,Rocket Fuel,Proteins,Processed Materials,Industrial Fibers,,,Intact Shield Emitter
-Non-CS Crystals,Photon Microprocessor,Superconductors,Reactive Metals,Processed Materials,Oxidizing Compound,,,Interface Circuit
-Planktic Colonies,,,Silicon,Processed Materials,Oxygen,,,Logic Circuit
-Reactive Gas,,,Toxic Metals,Processed Materials,Plasmoids,,,Lorentz Fluid
-Suspended Plasma,,,Water,Processed Materials,Precious Metals,,,Malfunctioning Shield Emitter
-GROUP – ADVANCED MOON MATERIALS,,,Construction Blocks,Processed Materials,Proteins,,,Melted Capacitor Console
-Crystalline Carbonide,,,Consumer Electronics,Processed Materials,Reactive Metals,,,Micro Circuit
-Fermionic Condensates,,,Mechanical Parts,Processed Materials,Silicon,,,Nanite Compound
-Fernite Carbide,,,Miniature Electronics,Processed Materials,Toxic Metals,,,Power Circuit
-Ferrogel,,,Robotics,Processed Materials,Water,,,Power Conduit
-Fullerides,,,Rocket Fuel,Refined Commodities,Biocells,,,Schorched Telemetry Processor
-Hypersynaptic Fibers,,,Superconductors,Refined Commodities,Construction Blocks,,,Single-crystal Superalloy I-beam
-Nanotransistors,,,GROUP – ADVANCED MOON MATERIALS,Refined Commodities,Consumer Electronics,,,Smashed Trigger Unit
-Nonlinear Metamaterials,,,Crystalline Carbonide,Refined Commodities,Coolant,,,Tangled Power Conduit
-Phenolic Composites,,,Fermionic Condensates,Refined Commodities,Enriched Uranium,,,Telemetry Processor
-Photonic Metamaterials,,,Fernite Carbide,Refined Commodities,Fertilizer,,,Thruster Console
-Plasmonic Metamaterials,,,Ferrogel,Refined Commodities,Genetically Enhanced Livestock,,,Trigger Unit
-Pressurized Oxidizers,,,Fullerides,Refined Commodities,Livestock,,,Tripped Power Circuit
-Reinforced Carbon Fiber,,,Hypersynaptic Fibers,Refined Commodities,Mechanical Parts,,,Ultraconducting Ablative Nanocable
-Sylramic Fibers,,,Nanotransistors,Refined Commodities,Microfiber Shielding,,,Ward Console
-Terahertz Metamaterials,,,Nonlinear Metamaterials,Refined Commodities,Miniature Electronics,,,
-Titanium Carbide,,,Phenolic Composites,Refined Commodities,Nanites,,,
-Tungsten Carbide,,,Photonic Metamaterials,Refined Commodities,Oxides,,,
-GROUP – SALVAGE MATERIALS,,,Plasmonic Metamaterials,Refined Commodities,Polyaramids,,,
-Alloyed Tritanium Bar,,,Pressurized Oxidizers,Refined Commodities,Polytextiles,,,
-Armor Plates,,,Reinforced Carbon Fiber,Refined Commodities,Rocket Fuel,,,
-Artificial Neural Network,,,Sylramic Fibers,Refined Commodities,Silicate Glass,,,
-Broken Drone Transceiver,,,Terahertz Metamaterials,Refined Commodities,Superconductors,,,
-Burned Logic Circuit,,,Titanium Carbide,Refined Commodities,Supertensile Plastics,,,
-Capacitor Console,,,Tungsten Carbide,Refined Commodities,Synthetic Oil,,,
-Charred Micro Circuit,,,GROUP – SALVAGE MATERIALS,Refined Commodities,Test Cultures,,,
-Conductive Polymer,,,Alloyed Tritanium Bar,Refined Commodities,Transmitter,,,
-Conductive Thermoplastic,,,Armor Plates,Refined Commodities,Viral Agent,,,
-Contaminated Lorentz Fluid,,,Artificial Neural Network,Refined Commodities,Water-Cooled CPU,,,
-Current Pump,,,Broken Drone Transceiver,Specialized Commodities,Biotech Research Reports,,,
-Damaged Artificial Neural Network,,,Burned Logic Circuit,Specialized Commodities,Camera Drones,,,
-Defective Current Pump,,,Capacitor Console,Specialized Commodities,Condensates,,,
-Drone Transceiver,,,Charred Micro Circuit,Specialized Commodities,Cryoprotectant Solution,,,
-Electromagnetic Metaprismatic Sheeting,,,Conductive Polymer,Specialized Commodities,Data Chips,,,
-Enhanced Ward Console,,,Conductive Thermoplastic,Specialized Commodities,Gel-Matrix Biopaste,,,
-Fried Interface Circuit,,,Contaminated Lorentz Fluid,Specialized Commodities,Guidance Systems,,,
-Hyperbolic Metatransistor Array,,,Current Pump,Specialized Commodities,Hazmat Detection Systems,,,
-Impetus Console,,,Damaged Artificial Neural Network,Specialized Commodities,Hermetic Membranes,,,
-Intact Armor Plates,,,Defective Current Pump,Specialized Commodities,High-Tech Transmitter,,,
-Intact Shield Emitter,,,Drone Transceiver,Specialized Commodities,Industrial Explosives,,,
-Interface Circuit,,,Electromagnetic Metaprismatic Sheeting,Specialized Commodities,Neocoms,,,
-Logic Circuit,,,Enhanced Ward Console,Specialized Commodities,Nuclear Reactors,,,
-Lorentz Fluid,,,Fried Interface Circuit,Specialized Commodities,Planetary Vehicles,,,
-Malfunctioning Shield Emitter,,,Hyperbolic Metatransistor Array,Specialized Commodities,Robotics,,,
-Melted Capacitor Console,,,Impetus Console,Specialized Commodities,Smartfab Units,,,
-Micro Circuit,,,Intact Armor Plates,Specialized Commodities,Supercomputers,,,
-Nanite Compound,,,Intact Shield Emitter,Specialized Commodities,Synthetic Synapses,,,
-Power Circuit,,,Interface Circuit,Specialized Commodities,Transcranial Microcontroller,,,
-Power Conduit,,,Logic Circuit,Specialized Commodities,Ukomi Superconductors,,,
-Schorched Telemetry Processor,,,Lorentz Fluid,Specialized Commodities,Vaccines,,,
-Single-crystal Superalloy I-beam,,,Malfunctioning Shield Emitter,Advanced Commodities,Broadcast Node,,,
-Smashed Trigger Unit,,,Melted Capacitor Console,Advanced Commodities,Integrity Response Drones,,,
-Tangled Power Conduit,,,Micro Circuit,Advanced Commodities,Nano-Factory,,,
-Telemetry Processor,,,Nanite Compound,Advanced Commodities,Organic Mortar Applicators,,,
-Thruster Console,,,Power Circuit,Advanced Commodities,Recursive Computing Module,,,
-Trigger Unit,,,Power Conduit,Advanced Commodities,Self Harmonizing Power Core,,,
-Tripped Power Circuit,,,Schorched Telemetry Processor,Advanced Commodities,Sterile Conduits,,,
-Ultraconducting Ablative Nanocable,,,Single-crystal Superalloy I-beam,Advanced Commodities,Wetware Mainframe,,,
-Ward Console,,,Smashed Trigger Unit,,,,,
-,,,Tangled Power Conduit,,,,,
-,,,Telemetry Processor,,,,,
-,,,Thruster Console,,,,,
-,,,Trigger Unit,,,,,
-,,,Tripped Power Circuit,,,,,
-,,,Ultraconducting Ablative Nanocable,,,,,
-,,,Ward Console,,,,,
+Raw material name,Product material name,PI,Tier 1,PI-item-tier,PI-all-items,Minerals,Advanced Moon Materials,Salvage,Science
+GROUP – MINERALS,Light Missile Launcher I,Bacteria,GROUP – MINERALS,Raw Materials,Aqueous Liquids,Isogen,Crystalline Carbonide,Alloyed Tritanium Bar,Advanced Laboratory Operation
+Isogen,Quantum Microprocessor,Biofuels,Isogen,Raw Materials,Autotrophs,Megacyte,Fermionic Condensates,Armor Plates,Amarr Encryption Methods
+Megacyte,R.A.M.- Weapon Tech,Biomass,Megacyte,Raw Materials,Base Metals,Mexallon,Fernite Carbide,Artificial Neural Network,Amarr Starship Engineering
+Mexallon,Plasma Thruster,Chiral Structures,Mexallon,Raw Materials,Carbon Compounds,Morphite,Ferrogel,Broken Drone Transceiver,Astronautic Engineering
+Morphite,Ion Thruster,Electrolytes,Morphite,Raw Materials,Complex Organisms,Nocxium,Fullerides,Burned Logic Circuit,Caldari Encryption Methods
+Nocxium,R.A.M.- Armor/Hull Tech,Industrial Fibers,Nocxium,Raw Materials,Felsic Magma,Pyerite,Hypersynaptic Fibers,Capacitor Console,Caldari Starship Engineering
+Pyerite,1MN Afterburner I,Oxidizing Compound,Pyerite,Raw Materials,Heavy Metals,Tritanium,Nanotransistors,Charred Micro Circuit,Core Subsystem Technology
+Tritanium,Antimatter Reactor Unit,Oxygen,Tritanium,Raw Materials,Ionic Solutions,Zydrine,Nonlinear Metamaterials,Conductive Polymer,Defensive Subsystem Technology
+Zydrine,Small Shield Booster I,Plasmoids,Zydrine,Raw Materials,Microorganisms,,Phenolic Composites,Conductive Thermoplastic,Electromagnetic Physics
+GROUP – PLANETARY MATERIALS,Pulse Shield Emitter,Precious Metals,GROUP – PLANETARY MATERIALS,Raw Materials,Noble Gas,,Photonic Metamaterials,Contaminated Lorentz Fluid,Electronic Engineering
+Aqueous Liquids,R.A.M.- Shield Tech,Proteins,Bacteria,Raw Materials,Noble Metals,,Plasmonic Metamaterials,Current Pump,Gallente Encryption Methods
+Autotrophs,Linear Shield Emitter,Reactive Metals,Biofuels,Raw Materials,Non-CS Crystals,,Pressurized Oxidizers,Damaged Artificial Neural Network,Gallente Starship Engineering
+Base Metals,EM Shield Amplifier I,Silicon,Biomass,Raw Materials,Planktic Colonies,,Reinforced Carbon Fiber,Defective Current Pump,Graviton Physics
+Carbon Compounds,Thermal Shield Amplifier I,Toxic Metals,Chiral Structures,Raw Materials,Reactive Gas,,Sylramic Fibers,Drone Transceiver,High Energy Physics
+Complex Organisms,Oscillator Capacitor Unit,Water,Electrolytes,Raw Materials,Suspended Plasma,,Terahertz Metamaterials,Electromagnetic Metaprismatic Sheeting,Hydromagnetic Physics
+Felsic Magma,Plasma Pulse Generator,Construction Blocks,Industrial Fibers,Processed Materials,Bacteria,,Titanium Carbide,Enhanced Ward Console,Laser Physics
+Heavy Metals,Fernite Carbide Composite Armor Plate,Consumer Electronics,Oxidizing Compound,Processed Materials,Biofuels,,Tungsten Carbide,Fried Interface Circuit,Mechanical Engineering
+Ionic Solutions,Damage Control I,Mechanical Parts,Oxygen,Processed Materials,Biomass,,,Hyperbolic Metatransistor Array,Minmatar Encryption Methods
+Microorganisms,Ballistic Control System I,Miniature Electronics,Plasmoids,Processed Materials,Chiral Structures,,,Impetus Console,Minmatar Starship Engineering
+Noble Gas,R.A.M.- Electronics,Robotics,Precious Metals,Processed Materials,Electrolytes,,,Intact Armor Plates,Molecular Engineering
+Noble Metals,Co-Processor I,Rocket Fuel,Proteins,Processed Materials,Industrial Fibers,,,Intact Shield Emitter,Nanite Engineering
+Non-CS Crystals,Photon Microprocessor,Superconductors,Reactive Metals,Processed Materials,Oxidizing Compound,,,Interface Circuit,Nuclear Physics
+Planktic Colonies,,,Silicon,Processed Materials,Oxygen,,,Logic Circuit,Offensive Subsystem Technology
+Reactive Gas,,,Toxic Metals,Processed Materials,Plasmoids,,,Lorentz Fluid,Plasma Physics
+Suspended Plasma,,,Water,Processed Materials,Precious Metals,,,Malfunctioning Shield Emitter,Propulsion Subsystem Technology
+GROUP – ADVANCED MOON MATERIALS,,,Construction Blocks,Processed Materials,Proteins,,,Melted Capacitor Console,Quantum Physics
+Crystalline Carbonide,,,Consumer Electronics,Processed Materials,Reactive Metals,,,Micro Circuit,Rocket Science
+Fermionic Condensates,,,Mechanical Parts,Processed Materials,Silicon,,,Nanite Compound,
+Fernite Carbide,,,Miniature Electronics,Processed Materials,Toxic Metals,,,Power Circuit,
+Ferrogel,,,Robotics,Processed Materials,Water,,,Power Conduit,
+Fullerides,,,Rocket Fuel,Refined Commodities,Biocells,,,Schorched Telemetry Processor,
+Hypersynaptic Fibers,,,Superconductors,Refined Commodities,Construction Blocks,,,Single-crystal Superalloy I-beam,
+Nanotransistors,,,GROUP – ADVANCED MOON MATERIALS,Refined Commodities,Consumer Electronics,,,Smashed Trigger Unit,
+Nonlinear Metamaterials,,,Crystalline Carbonide,Refined Commodities,Coolant,,,Tangled Power Conduit,
+Phenolic Composites,,,Fermionic Condensates,Refined Commodities,Enriched Uranium,,,Telemetry Processor,
+Photonic Metamaterials,,,Fernite Carbide,Refined Commodities,Fertilizer,,,Thruster Console,
+Plasmonic Metamaterials,,,Ferrogel,Refined Commodities,Genetically Enhanced Livestock,,,Trigger Unit,
+Pressurized Oxidizers,,,Fullerides,Refined Commodities,Livestock,,,Tripped Power Circuit,
+Reinforced Carbon Fiber,,,Hypersynaptic Fibers,Refined Commodities,Mechanical Parts,,,Ultraconducting Ablative Nanocable,
+Sylramic Fibers,,,Nanotransistors,Refined Commodities,Microfiber Shielding,,,Ward Console,
+Terahertz Metamaterials,,,Nonlinear Metamaterials,Refined Commodities,Miniature Electronics,,,,
+Titanium Carbide,,,Phenolic Composites,Refined Commodities,Nanites,,,,
+Tungsten Carbide,,,Photonic Metamaterials,Refined Commodities,Oxides,,,,
+GROUP – SALVAGE MATERIALS,,,Plasmonic Metamaterials,Refined Commodities,Polyaramids,,,,
+Alloyed Tritanium Bar,,,Pressurized Oxidizers,Refined Commodities,Polytextiles,,,,
+Armor Plates,,,Reinforced Carbon Fiber,Refined Commodities,Rocket Fuel,,,,
+Artificial Neural Network,,,Sylramic Fibers,Refined Commodities,Silicate Glass,,,,
+Broken Drone Transceiver,,,Terahertz Metamaterials,Refined Commodities,Superconductors,,,,
+Burned Logic Circuit,,,Titanium Carbide,Refined Commodities,Supertensile Plastics,,,,
+Capacitor Console,,,Tungsten Carbide,Refined Commodities,Synthetic Oil,,,,
+Charred Micro Circuit,,,GROUP – SALVAGE MATERIALS,Refined Commodities,Test Cultures,,,,
+Conductive Polymer,,,Alloyed Tritanium Bar,Refined Commodities,Transmitter,,,,
+Conductive Thermoplastic,,,Armor Plates,Refined Commodities,Viral Agent,,,,
+Contaminated Lorentz Fluid,,,Artificial Neural Network,Refined Commodities,Water-Cooled CPU,,,,
+Current Pump,,,Broken Drone Transceiver,Specialized Commodities,Biotech Research Reports,,,,
+Damaged Artificial Neural Network,,,Burned Logic Circuit,Specialized Commodities,Camera Drones,,,,
+Defective Current Pump,,,Capacitor Console,Specialized Commodities,Condensates,,,,
+Drone Transceiver,,,Charred Micro Circuit,Specialized Commodities,Cryoprotectant Solution,,,,
+Electromagnetic Metaprismatic Sheeting,,,Conductive Polymer,Specialized Commodities,Data Chips,,,,
+Enhanced Ward Console,,,Conductive Thermoplastic,Specialized Commodities,Gel-Matrix Biopaste,,,,
+Fried Interface Circuit,,,Contaminated Lorentz Fluid,Specialized Commodities,Guidance Systems,,,,
+Hyperbolic Metatransistor Array,,,Current Pump,Specialized Commodities,Hazmat Detection Systems,,,,
+Impetus Console,,,Damaged Artificial Neural Network,Specialized Commodities,Hermetic Membranes,,,,
+Intact Armor Plates,,,Defective Current Pump,Specialized Commodities,High-Tech Transmitter,,,,
+Intact Shield Emitter,,,Drone Transceiver,Specialized Commodities,Industrial Explosives,,,,
+Interface Circuit,,,Electromagnetic Metaprismatic Sheeting,Specialized Commodities,Neocoms,,,,
+Logic Circuit,,,Enhanced Ward Console,Specialized Commodities,Nuclear Reactors,,,,
+Lorentz Fluid,,,Fried Interface Circuit,Specialized Commodities,Planetary Vehicles,,,,
+Malfunctioning Shield Emitter,,,Hyperbolic Metatransistor Array,Specialized Commodities,Robotics,,,,
+Melted Capacitor Console,,,Impetus Console,Specialized Commodities,Smartfab Units,,,,
+Micro Circuit,,,Intact Armor Plates,Specialized Commodities,Supercomputers,,,,
+Nanite Compound,,,Intact Shield Emitter,Specialized Commodities,Synthetic Synapses,,,,
+Power Circuit,,,Interface Circuit,Specialized Commodities,Transcranial Microcontroller,,,,
+Power Conduit,,,Logic Circuit,Specialized Commodities,Ukomi Superconductors,,,,
+Schorched Telemetry Processor,,,Lorentz Fluid,Specialized Commodities,Vaccines,,,,
+Single-crystal Superalloy I-beam,,,Malfunctioning Shield Emitter,Advanced Commodities,Broadcast Node,,,,
+Smashed Trigger Unit,,,Melted Capacitor Console,Advanced Commodities,Integrity Response Drones,,,,
+Tangled Power Conduit,,,Micro Circuit,Advanced Commodities,Nano-Factory,,,,
+Telemetry Processor,,,Nanite Compound,Advanced Commodities,Organic Mortar Applicators,,,,
+Thruster Console,,,Power Circuit,Advanced Commodities,Recursive Computing Module,,,,
+Trigger Unit,,,Power Conduit,Advanced Commodities,Self Harmonizing Power Core,,,,
+Tripped Power Circuit,,,Schorched Telemetry Processor,Advanced Commodities,Sterile Conduits,,,,
+Ultraconducting Ablative Nanocable,,,Single-crystal Superalloy I-beam,Advanced Commodities,Wetware Mainframe,,,,
+Ward Console,,,Smashed Trigger Unit,,,,,,
+,,,Tangled Power Conduit,,,,,,
+,,,Telemetry Processor,,,,,,
+,,,Thruster Console,,,,,,
+,,,Trigger Unit,,,,,,
+,,,Tripped Power Circuit,,,,,,
+,,,Ultraconducting Ablative Nanocable,,,,,,
+,,,Ward Console,,,,,,

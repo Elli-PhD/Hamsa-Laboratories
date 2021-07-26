@@ -1,0 +1,153 @@
+1318:
+    activities:
+        copying:
+            time: 720
+        invention:
+            materials:
+            -   quantity: 2
+                typeID: 20416
+            -   quantity: 2
+                typeID: 20415
+            products:
+            -   probability: 0.34
+                quantity: 10
+                typeID: 1320
+            skills:
+            -   level: 1
+                typeID: 11529
+            -   level: 1
+                typeID: 11442
+            -   level: 1
+                typeID: 23121
+            time: 13800
+        manufacturing:
+            materials:
+            -   quantity: 10
+                typeID: 37
+            -   quantity: 1
+                typeID: 38
+            products:
+            -   quantity: 1
+                typeID: 1317
+            skills:
+            -   level: 1
+                typeID: 3380
+            time: 900
+        research_material:
+            time: 315
+        research_time:
+            time: 315
+    blueprintTypeID: 1318
+    maxProductionLimit: 200
+1320:
+    activities:
+        copying:
+            materials:
+            -   quantity: 1
+                typeID: 11465
+            -   quantity: 10
+                typeID: 3812
+            skills:
+            -   level: 1
+                typeID: 11442
+            -   level: 1
+                typeID: 11529
+            time: 1872
+        manufacturing:
+            materials:
+            -   quantity: 1
+                typeID: 1317
+            -   quantity: 1
+                typeID: 11399
+            -   quantity: 1
+                typeID: 11538
+            -   quantity: 1
+                typeID: 11475
+            -   quantity: 8
+                typeID: 3828
+            -   quantity: 1
+                typeID: 11545
+            products:
+            -   quantity: 1
+                typeID: 1319
+            skills:
+            -   level: 5
+                typeID: 3380
+            -   level: 1
+                typeID: 11442
+            -   level: 1
+                typeID: 11529
+            time: 2340
+        research_material:
+            materials:
+            -   quantity: 1
+                typeID: 11465
+            -   quantity: 1
+                typeID: 9836
+            -   quantity: 3
+                typeID: 3814
+            skills:
+            -   level: 5
+                typeID: 3409
+            -   level: 1
+                typeID: 11442
+            -   level: 1
+                typeID: 11529
+            time: 819
+        research_time:
+            materials:
+            -   quantity: 1
+                typeID: 11465
+            -   quantity: 1
+                typeID: 9836
+            -   quantity: 3
+                typeID: 3814
+            skills:
+            -   level: 5
+                typeID: 3403
+            -   level: 1
+                typeID: 11442
+            -   level: 1
+                typeID: 11529
+            time: 819
+    blueprintTypeID: 1320
+    maxProductionLimit: 10
+1334:
+    activities:
+        copying:
+            time: 720
+        invention:
+            materials:
+            -   quantity: 1
+                typeID: 20416
+            -   quantity: 1
+                typeID: 20415
+            products:
+            -   probability: 0.34
+                quantity: 10
+                typeID: 1336
+            skills:
+            -   level: 1
+                typeID: 11529
+            -   level: 1
+                typeID: 11442
+            -   level: 1
+                typeID: 23121
+            time: 13800
+        manufacturing:
+            materials:
+            -   quantity: 6944
+                typeID: 34
+            products:
+            -   quantity: 1
+                typeID: 1333
+            skills:
+            -   level: 1
+                typeID: 3380
+            time: 900
+        research_material:
+            time: 315
+        research_time:
+            time: 315
+    blueprintTypeID: 1334
+    maxProductionLimit: 200

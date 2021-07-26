@@ -14,10 +14,12 @@ query['Quantity'] = query['Quantity'].astype(float)
 query['ME'] = query['ME'].astype(float)
 
 # Load all blueprint data
-blueprints = pd.read_csv('blueprints.csv')
-blueprints = blueprints[\
-                ['Quantity', 'Material Name', 'Product Name']]
-blueprints['Quantity'] = blueprints['Quantity'].astype(float)
+blueprints_all = pd.read_csv('blueprints.csv')
+blueprints_all = blueprints_all[\
+                ['Quantity', 'Material Name', 'Product Name','activity']]
+blueprints_all['Quantity'] = blueprints_all['Quantity'].astype(float)
+blueprints = blueprints_all[blueprints_all['activity'] == 'production']
+invention = blueprints_all[blueprints_all['activity'] == 'invention']
 
 # Extract query data from blueprint data
 ##tier1 = pd.DataFrame()
@@ -191,10 +193,27 @@ adv_moon_mats = raw_materials[raw_materials['Material Name'].\
 salvage = raw_materials[raw_materials['Material Name'].\
                          isin(all_mats['Salvage'].tolist())]
 
+# Last thing to do is pull invention information
+product_name = []
+material_name = []
+
+##invention = invention[(invention['Product Name'].\
+##                      isin(query['Name'].drop_duplicates().to_list())) & \
+##                      (invention['Material Name'].\
+##                      isin(all_mats['Science'].drop_duplicates().to_list()))]
+##print('Invention:\n'+str(invention))
+##print(query['Name'].drop_duplicates().tolist())
+print(invention[invention['Product Name'].isin(['1MN Afterburner II Blueprint'])])
+##print(invention[invention['Product Name'].isin(query['Name'].\
+##                            drop_duplicates().tolist())])
+sys.exit()
 
 print('Final report: \n')
 print('Base list (iteration = 0)')
 print(base)
+print('\n\n')
+print('invention: ')
+print(invention)
 print('\n\n')
 print('Planetary Industry: ')
 print(pi_list)
