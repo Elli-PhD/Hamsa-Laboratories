@@ -166,8 +166,11 @@ for i in pi_list['Material Name'].drop_duplicates():
 
 pi_list = pi_list_tmp
 pi_list = pd.DataFrame(pi_list)
-pi_list.columns = ['Quantity','Material Name']
-pi_list = pi_list.sort_values(by = 'Material Name')
+try:
+    pi_list.columns = ['Quantity','Material Name']
+    pi_list = pi_list.sort_values(by = 'Material Name')
+except ValueError:
+    pass
 ##print(pi_list)
 ##sys.exit()
     
