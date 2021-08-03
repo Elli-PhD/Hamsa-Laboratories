@@ -1,28 +1,41 @@
-Query,Name,Quantity,ME
-,Breacher,1,10
-,Light Missile Launcher II,10,2
-,1MN Afterburner II,10,2
-,Small Shield Booster II,10,2
-,EM Shield Amplifier II,10,2
-,Thermal Shield Amplifier II,10,2
-,Damage Control II,10,2
-,Ballistic Control System II,10,2
-,Co-Processor II,10,2
-,Small Semiconductor Memory Cell I,3,10
-,Expanded Cargohold II,10,2
-,Mjolnir Precision Heavy Missile,10,2
-,,,
-,Wreathe,1,10
-,10MN Afterburner II,10,2
-,EM Shield Amplifier II,10,2
-,Thermal Shield Amplifier II,10,2
-,Large Shield Extender II,10,2
-,Expanded Cargohold II,10,2
-,Medium Cargohold Optimization I,2,10
-,Medium Hyperspatial Velocity Optimizer I,1,10
-,,,
-,Nomad,1,5
-,,,
-,Prowler,1,2
-,,,
-y,Warp Core Stabilizer II,10,2
+Query,Name,Quantity,ME,,,
+,Breacher,1,10,,,
+,Light Missile Launcher II,10,2,,,
+,1MN Afterburner II,10,2,,,
+,Small Shield Booster II,10,2,,,
+,EM Shield Amplifier II,10,2,,,
+,Thermal Shield Amplifier II,10,2,y,,
+,Damage Control II,10,2,y,,
+,Ballistic Control System II,10,2,,,
+,Co-Processor II,10,2,,,
+,Small Semiconductor Memory Cell I,3,10,,,
+,Expanded Cargohold II,10,2,y,,
+,Mjolnir Precision Heavy Missile,10,2,,,
+,,,,,,
+,Wreathe,1,10,,,
+,10MN Afterburner II,10,2,,,
+,EM Shield Amplifier II,10,2,,-7900,-790000
+,Thermal Shield Amplifier II,10,2,,,
+,Large Shield Extender II,10,2,,,
+,Expanded Cargohold II,10,2,,,
+,Medium Cargohold Optimization I,2,10,,,
+,Medium Hyperspatial Velocity Optimizer I,1,10,,,
+,,,,,,
+,Nomad,1,5,,,
+,,,,,,
+,Prowler,1,2,,,
+,,,,,,
+,Warp Core Stabilizer II,10,2,y,,
+,,,,,,
+y,Bellicose,1,10,,,
+y,Heavy Missile Launcher II,10,10,,,
+y,10MN Afterburner II,10,10,,,
+y,Target Painter II,10,10,,,
+y,Medium Shield Booster II,10,10,,,
+y,Shield Boost Amplifier II,10,10,,,
+y,Multispectrum Shield Hardener II,10,10,,,
+y,Damage Control II,10,10,,,
+y,Ballistic Control System II,10,10,,,
+y,Missile Guidance Enhancer II,10,10,,,
+,,,,,,
+,Mobile Tractor Unit,1,10,,,

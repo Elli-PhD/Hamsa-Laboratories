@@ -1,7 +1,19 @@
 import pandas as pd
 pd.set_option('display.max_columns', None)
 import numpy as np
+import datetime
 import sys
+
+# first set up logging functionality
+log = open('log.txt', 'w')
+##log.write('Datetime, Description\n')
+##log.close()
+##def append_to_log(x, description):
+####    log = open('log.txt', 'a')
+##    log.write(str(datetime.datetime.now())+', '+\
+##                  str(description)+'\n'+str(x)+'\n\n')
+##    log.write(description)
+####    log.close()
 
 # Pull global dataframe of all products and materials
 all_mats = pd.read_csv('global - list of materials and products.csv',\
@@ -12,6 +24,8 @@ query = pd.read_csv('query_blueprints - query list.csv')
 query = query[query['Query'] == 'y']
 query['Quantity'] = query['Quantity'].astype(float)
 query['ME'] = query['ME'].astype(float)
+# Log entry
+log.write('Initial query: \n%s\n\n'%query[['Name','Quantity']])
 
 # Load all blueprint data
 blueprints_all = pd.read_csv('blueprints.csv')
@@ -20,6 +34,8 @@ blueprints_all = blueprints_all[\
 blueprints_all['Quantity'] = blueprints_all['Quantity'].astype(float)
 blueprints = blueprints_all[blueprints_all['activity'] == 'production']
 invention = blueprints_all[blueprints_all['activity'] == 'invention']
+#Log entry
+log.write('All blueprint data loaded.\n\n')
 
 # Extract query data from blueprint data
 ##tier1 = pd.DataFrame()
@@ -37,8 +53,11 @@ products = pd.DataFrame()
 for i in query['Name'].to_list():
     base = pd.concat([base, blueprints[\
                                 blueprints['Product Name'] == i]])
+base = base[~base['Material Name'].isin(all_mats['Skills'].tolist())]
+base = base[['Quantity', 'Material Name', 'Product Name']]
+log.write('Blueprint data for items in query acquired.\n\n')
 
-# Multiply base list by ME and quantities
+# Multiply base list by ME and quantities and round up
 products = pd.DataFrame()
 for i in base['Product Name'].drop_duplicates():
     tmp = base[base['Product Name'] == i].copy()
@@ -48,6 +67,13 @@ for i in base['Product Name'].drop_duplicates():
 ##    tmp['Quantity'] = tmp['Quantity']*quantity*(1-mef/100.)
     tmp['Quantity'] = np.ceil(tmp['Quantity']*quantity*(1-mef/100.))
     products = pd.concat([products, tmp])
+log.write('''
+Total quantities of inputs required for manufacturing calculated
+Material Efficienty levels and output quantities taken into consideration
+as they were configured in query.csv.  Unique material quantities
+have been added together, and the following log shown the items
+according to their groupings.
+\n''')
 
 # Add unique material quantities together
 products_tmp = []
@@ -59,6 +85,8 @@ for i in products['Material Name'].drop_duplicates():
 products_tmp = pd.DataFrame(products_tmp)
 products_tmp.columns = ['Quantity','Material Name']
 products = products_tmp
+##log.write(str(products[['Quantity','Material Name']])+'\n\n')
+
 
 ##products = base
 iteration = 0
@@ -74,15 +102,22 @@ iteration = 0
 # repeat until list contains only raw materials
 # Seperate list of Planetary Industry materials from other materials
 pi_list = products[products['Material Name'].isin(all_mats['PI-all-items'].tolist())\
-                == True]
+                == True].sort_values(by='Material Name')
 # Seperate raw materials from products
 raw_materials = products[products['Material Name'].isin(all_mats['Raw material name'].tolist())\
-                == True]
+                == True].sort_values(by='Material Name')
 # Seperate Items that require further breakdown
 products = products[(products['Material Name'].isin(all_mats['PI-all-items'].tolist())\
                 == False) & \
                    (products['Material Name'].isin(all_mats['Raw material name'].tolist())\
-                == False)]
+                == False)].sort_values(by='Material Name')
+log.write('Planetary Industry:\n'+str(pi_list)+\
+          '\n\nMinerals:\n'+str(raw_materials)+\
+          '\n\nRequires further querying: \n'+str(products))
+##print('Planetary Industry:\n'+str(pi_list)+\
+##          '\n\nMinerals:\n'+str(raw_materials)+\
+##          '\n\nRequires further querying: \n'+str(products)+'\n')
+secondary_query = products
 
 ##print('Planetary Industry (iteration = %s):'%iteration)
 ##print(pi_list)
@@ -93,6 +128,7 @@ products = products[(products['Material Name'].isin(all_mats['PI-all-items'].tol
 ##print("Remaining products (iteration = %s, length = %s)"%(iteration, len(products)))
 ##print(products)
 ##print('\n\n')
+##sys.exit()
 
 # Iterative process starts here
 # Generate Base List
@@ -195,6 +231,10 @@ adv_moon_mats = raw_materials[raw_materials['Material Name'].\
                          isin(all_mats['Advanced Moon Materials'].tolist())]
 salvage = raw_materials[raw_materials['Material Name'].\
                          isin(all_mats['Salvage'].tolist())]
+##if len(adv_moon_mats) == 0:
+##    pass
+##else:
+##    print('Advanced Moon Materials:\n%s'%adv_moon_mats)
 
 # Last thing to do is pull invention information
 product_name = []
@@ -212,6 +252,19 @@ invention = invention[(invention['Product Name'].\
 ##print(invention[invention['Product Name'].isin(query['Blueprint'].\
 ##                            drop_duplicates().tolist())])
 ##sys.exit()
+log.close()
+##log = open('log.txt', 'r')
+##print(log.read())
+
+
+print('Initial query: \n%s\n\n'%query[['Name','Quantity']])
+print('Datacore types necessary for invention:\n%s\n'%invention['Material Name'].drop_duplicates().sort_values())
+print('Secondary query\n%s\n\n'%secondary_query)
+print('Mineral inputs (need to fix R.A.M. overcounting):\n%s\n'%minerals)
+print('Planetary inputs:\n%s\n'%pi_list)
+print('Advanced moon material inputs:\n%s\n'%adv_moon_mats)
+print('Salvage inputs:\n%s\n'%salvage)
+sys.exit()
 
 print('Final report: \n')
 print('Base list (iteration = 0)')
