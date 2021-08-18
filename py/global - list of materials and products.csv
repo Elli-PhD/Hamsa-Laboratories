@@ -14,21 +14,21 @@ Autotrophs,Linear Shield Emitter,Reactive Metals,Biofuels,Raw Materials,Non-CS C
 Base Metals,EM Shield Amplifier I,Silicon,Biomass,Raw Materials,Planktic Colonies,,Reinforced Carbon Fiber,Defective Current Pump,Graviton Physics,Curie,x6,2,Raw Materials,Planktic Colonies,For 9 WwMf,For 10 OMAs,For 30 UkSc
 Carbon Compounds,Thermal Shield Amplifier I,Toxic Metals,Chiral Structures,Raw Materials,Reactive Gas,,Sylramic Fibers,Drone Transceiver,High Energy Physics,Goeppert,Ruborraude,1,Raw Materials,Reactive Gas,18*160*9*.38 = 9849.6,(160*8+40)*0.38*10 = 5016,320*0.38*10 ~ 1220
 Complex Organisms,Oscillator Capacitor Unit,Water,Electrolytes,Raw Materials,Suspended Plasma,,Terahertz Metamaterials,Electromagnetic Metaprismatic Sheeting,Hydromagnetic Physics,Eliana,Aetaksan,2,Raw Materials,Suspended Plasma,,,
-Felsic Magma,Plasma Pulse Generator,Construction Blocks,Industrial Fibers,Processed Materials,Bacteria,,Titanium Carbide,Enhanced Ward Console,Laser Physics,Curie,Amarr,5,Processed Materials,Bacteria,3 (480*9 = 4320),40,
-Heavy Metals,Fernite Carbide Composite Armor Plate,Consumer Electronics,Oxidizing Compound,Processed Materials,Biofuels,,Tungsten Carbide,Fried Interface Circuit,Mechanical Engineering,Goeppert,Kasukell,2,Processed Materials,Biofuels,1 (160*9 = 1440),,
+Felsic Magma,Plasma Pulse Generator,Construction Blocks,Industrial Fibers,Processed Materials,Bacteria,,Titanium Carbide,Enhanced Ward Console,Laser Physics,Curie,Amarr,5,Processed Materials,Bacteria,480,40,
+Heavy Metals,Fernite Carbide Composite Armor Plate,Consumer Electronics,Oxidizing Compound,Processed Materials,Biofuels,,Tungsten Carbide,Fried Interface Circuit,Mechanical Engineering,Goeppert,Kasukell,2,Processed Materials,Biofuels,160,,
 Ionic Solutions,Damage Control I,Mechanical Parts,Oxygen,Processed Materials,Biomass,,,Hyperbolic Metatransistor Array,Minmatar Encryption Methods,,,,Processed Materials,Biomass,,,
-Microorganisms,Ballistic Control System I,Miniature Electronics,Plasmoids,Processed Materials,Chiral Structures,,,Impetus Console,Minmatar Starship Engineering,Eliana,many,,Processed Materials,Chiral Structures,1 (160*9 = 1440),160,
-Noble Gas,R.A.M.- Electronics,Robotics,Precious Metals,Processed Materials,Electrolytes,,,Intact Armor Plates,Molecular Engineering,Curie,"Elanoda, Kokanogi",3,Processed Materials,Electrolytes,2 (320*9 = 2880),160,80
+Microorganisms,Ballistic Control System I,Miniature Electronics,Plasmoids,Processed Materials,Chiral Structures,,,Impetus Console,Minmatar Starship Engineering,Eliana,many,,Processed Materials,Chiral Structures,160,160,
+Noble Gas,R.A.M.- Electronics,Robotics,Precious Metals,Processed Materials,Electrolytes,,,Intact Armor Plates,Molecular Engineering,Curie,"Elanoda, Kokanogi",3,Processed Materials,Electrolytes,320,160,80
 Noble Metals,Co-Processor I,Rocket Fuel,Proteins,Processed Materials,Industrial Fibers,,,Intact Shield Emitter,Nanite Engineering,Goeppert,Sitaleere,3,Processed Materials,Industrial Fibers,,,
 Non-CS Crystals,Photon Microprocessor,Superconductors,Reactive Metals,Processed Materials,Oxidizing Compound,,,Interface Circuit,Nuclear Physics,Eliana,Rervedia,3,Processed Materials,Oxidizing Compound,,160,
-Planktic Colonies,,,Silicon,Processed Materials,Oxygen,,,Logic Circuit,Offensive Subsystem Technology,,,,Processed Materials,Oxygen,1 (160*9 = 1440),160,80
+Planktic Colonies,,,Silicon,Processed Materials,Oxygen,,,Logic Circuit,Offensive Subsystem Technology,,,,Processed Materials,Oxygen,160,160,80
 Reactive Gas,,,Toxic Metals,Processed Materials,Plasmoids,,,Lorentz Fluid,Plasma Physics,Goeppert,Doppepuette,4,Processed Materials,Plasmoids,,,80
 Suspended Plasma,,,Water,Processed Materials,Precious Metals,,,Malfunctioning Shield Emitter,Propulsion Subsystem Technology,,,,Processed Materials,Precious Metals,,160,
-GROUP – ADVANCED MOON MATERIALS,,,Construction Blocks,Processed Materials,Proteins,,,Melted Capacitor Console,Quantum Physics,Eliana,Rias,4,Processed Materials,Proteins,2 (320*9 = 2880),,
-Crystalline Carbonide,,,Consumer Electronics,Processed Materials,Reactive Metals,,,Micro Circuit,Rocket Science,Curie,x4,4,Processed Materials,Reactive Metals,3 (480*9 = 4320),160,
+GROUP – ADVANCED MOON MATERIALS,,,Construction Blocks,Processed Materials,Proteins,,,Melted Capacitor Console,Quantum Physics,Eliana,Rias,4,Processed Materials,Proteins,320,,
+Crystalline Carbonide,,,Consumer Electronics,Processed Materials,Reactive Metals,,,Micro Circuit,Rocket Science,Curie,x4,4,Processed Materials,Reactive Metals,480,160,
 Fermionic Condensates,,,Mechanical Parts,Processed Materials,Silicon,,,Nanite Compound,Industry,,,,Processed Materials,Silicon,,,
-Fernite Carbide,,,Miniature Electronics,Processed Materials,Toxic Metals,,,Power Circuit,,,,,Processed Materials,Toxic Metals,2 (320*9 = 2880),160,
-Ferrogel,,,Robotics,Processed Materials,Water,,,Power Conduit,,,,,Processed Materials,Water,3 (480*9 = 4320),160,80
+Fernite Carbide,,,Miniature Electronics,Processed Materials,Toxic Metals,,,Power Circuit,,,,,Processed Materials,Toxic Metals,320,160,
+Ferrogel,,,Robotics,Processed Materials,Water,,,Power Conduit,,,,,Processed Materials,Water,480,160,80
 Fullerides,,,Rocket Fuel,Refined Commodities,Biocells,,,Schorched Telemetry Processor,,,,,Refined Commodities,Biocells,,,
 Hypersynaptic Fibers,,,Superconductors,Refined Commodities,Construction Blocks,,,Single-crystal Superalloy I-beam,,,,,Refined Commodities,Construction Blocks,,,
 Nanotransistors,,,GROUP – ADVANCED MOON MATERIALS,Refined Commodities,Consumer Electronics,,,Smashed Trigger Unit,,,,,Refined Commodities,Consumer Electronics,,,

@@ -264,6 +264,7 @@ print('Mineral inputs (need to fix R.A.M. overcounting):\n%s\n'%minerals)
 print('Planetary inputs:\n%s\n'%pi_list)
 print('Advanced moon material inputs:\n%s\n'%adv_moon_mats)
 print('Salvage inputs:\n%s\n'%salvage)
+input('Press Enter to exit...')
 sys.exit()
 
 print('Final report: \n')
